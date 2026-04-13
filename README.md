@@ -6,7 +6,7 @@ Python implementation of the method described in:
 
 > **[1]** Mkaouar, A., Kallel, A., Guidara, R., Ben Rabah, Z., Sahli, T., Qi, J., & Gastellu-Etchegorry, J.-P. (2021). *Joint Estimation of Leaf Area Density and Leaf Angle Distribution Using TLS Point Cloud for Forest Stands.* IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 14, 11095–11115. https://doi.org/10.1109/JSTARS.2021.3120521
 
-> **[2]** Mkaouar, A., & Kallel, A. (2023). *Leaf properties estimation enhancement over heterogeneous vegetation by correcting for terrestrial laser scanning beam divergence effect.* Remote Sensing of Environment.
+> **[2]** Mkaouar, A., & Kallel, A. (2023). *Leaf properties estimation enhancement over heterogeneous vegetation by correcting for terrestrial laser scanning beam divergence effect.* Remote Sensing of Environment. https://doi.org/10.1016/j.rse.2023.11395 
 
 ---
 
@@ -14,7 +14,7 @@ Python implementation of the method described in:
 
 Most PAD tools (AMAPVox, L-Vox, lidR) assume a **fixed G = 0.5** (spherical leaf distribution). This tool **jointly estimates PAD and LIDF simultaneously** — the leaf angle distribution is an output, not an assumption.
 
-The key insight: if the LIDF estimate is wrong, PAD will be *inconsistent across viewing directions*. The SCE-UA optimiser finds the LIDF that makes PAD maximally consistent — a physically elegant consistency argument.
+The key insight: if the LIDF estimate is wrong, PAD will be *inconsistent across viewing directions*. The SCE-UA optimiser finds the LIDF that makes PAD maximally consistent.
 
 Paper [2] adds a **beam divergence correction**: the laser footprint grows with distance from the scanner, biasing transmittance estimates for distant voxels.
 
@@ -53,7 +53,7 @@ python cli.py \
     --output results/
 ```
 
-### Multi-scan plot (e.g. Lydia's setup)
+### Multi-scan plot 
 Process each scan position independently, then merge:
 ```bash
 # Each scan with its own scanner position
