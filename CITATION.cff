@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the paper and the software."
+title: "padlad-tls: Joint PAD/LAD Estimator from TLS Point Clouds"
+version: 1.0.0
+authors:
+  - family-names: Mkaouar
+    given-names: Ameni
+  - family-names: Kallel
+    given-names: Abdelaziz
+references:
+  - type: article
+    title: "Joint Estimation of Leaf Area Density and Leaf Angle Distribution Using TLS Point Cloud for Forest Stands"
+    authors:
+      - family-names: Mkaouar
+        given-names: Ameni
+    journal: "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing"
+    volume: 14
+    year: 2021
+    doi: 10.1109/JSTARS.2021.3120521
